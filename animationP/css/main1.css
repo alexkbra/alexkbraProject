@@ -1,0 +1,30 @@
+.content{
+	width: 100%;
+	border: 2px solid red;
+	height: 40em;
+}
+
+.left{
+	float: left;
+	width: 45%;
+	border: 2px solid black;
+	height: 30em;
+	margin: 2%;
+	position: absolute;
+	-webkit-animation: anim2 ease-in-out 3s infinite alternate;
+}
+
+/*.right{
+	float: right;
+	width: 45%;
+	border: 2px solid blue;
+	height: 30em;
+	margin: 2%;
+}*/
+
+@-webkit-keyframes anim2
+{
+	from {left: 0px;   -webkit-transform: scale(1.0) rotate(0deg)   }
+   50%  {left: 250px; -webkit-transform: scale(0.8) rotate(10deg)  }
+   to   {left: 500px; -webkit-transform: scale(1.2) rotate(-20deg) }
+}

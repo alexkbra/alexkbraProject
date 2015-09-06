@@ -1,0 +1,59 @@
+/*.content{
+	width: 100%;
+	border: 2px solid red;
+	height: 40em;
+	position: relative;
+}*/
+
+.content{
+	height: 340px;
+	margin-left: auto;
+	margin-right: auto;
+	perspective: 1000px;
+	width: 600px;
+}
+
+.left{
+	left: 165px;
+	position: absolute;
+	width: 50%;
+	border: 2px solid black;
+	height: 30em;
+	margin: 2%;
+	background: gray;
+	-webkit-transform: translateZ(150px);
+	top: 15px;
+}
+
+.right{
+	right: 165px;
+	position: absolute;
+	width: 50%;
+	border: 2px solid blue;
+	height: 30em;
+	margin: 2%;	
+	-webkit-transform: translateZ(-150px);
+	top: 15px;
+}
+
+.objetct3d{
+	height: inherit;
+	position: absolute;
+	transform-style: preserve-3d;
+	width: inherit;
+}
+
+.begin{
+	animation: 4s linear 0s normal none infinite running rotate3d2;
+}
+
+@keyframes rotate3d2{
+	0%
+	{
+		transform: rotateY(0deg);
+	}
+	100%
+	{
+		transform: rotateY(360deg);
+	}
+}

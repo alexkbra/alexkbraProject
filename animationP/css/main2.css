@@ -1,0 +1,34 @@
+.content{
+	width: 100%;
+	border: 2px solid red;
+	height: 40em;
+}
+
+#center{
+	position: absolute;
+	transition: all 1s ease 0s;
+}
+
+.begin{
+	
+	width: 45%;
+	border: 2px solid black;
+	height: 30em;
+	margin: 2%;
+
+	left: 0px;
+	-webkit-transform: rotate(0deg);
+	-webkit-transition: 1s;
+}
+
+.end{
+	
+	width: 45%;
+	border: 2px solid black;
+	height: 30em;
+	margin: 2%;
+
+	left: 500px;
+	-webkit-transform: rotate(360deg);
+	-webkit-transition: 1s;
+}
